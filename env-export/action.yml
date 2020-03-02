@@ -1,0 +1,5 @@
+name: SecretHub Export Environment
+description: Export secrets from SecretHub to the environment
+runs:
+  using: docker
+  image: Dockerfile
