@@ -4,7 +4,7 @@
   </a>
   <img width="50px"/>
   <a href="https://secrethub.io">
-    <img src="https://secrethub.io/img/secrethub-logo-shield.svg" alt="SecretHub" width="96">
+    <img src="https://secrethub.io/img/secrethub-logo-shield.svg" alt="SecretHub" width="102">
   </a>
 </p>
 <h1 align="center">
@@ -40,7 +40,8 @@ jobs:
       - name: Print environment with masked secrets
         run: printenv
       - name: Notify Slack
-        uses: Ilshidur/action-slack@2.0.1 # this Action expects SLACK_WEBHOOK to be set
+        # This action expects SLACK_WEBHOOK to be set, which is now done automatically
+        uses: Ilshidur/action-slack@2.0.1
         with:
           args: Sent from GitHub Actions with secrets from SecretHub 🔑
 ```
