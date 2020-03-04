@@ -1,0 +1,14 @@
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./env-export
+        env:
+          SECRETHUB_CREDENTIAL: ${{ secrets.SECRETHUB_CREDENTIAL }}
+          SECRET: secrethub://secrethub/tst-github-action/secret
+      - name: Print environment with masked secrets
+        run: printenv
+      - name: Test secret is set to correct value
+        run: if [ $SECRET != "DDXLKkBhprQgW7w7OFsM8y" ]; then echo "secret is not set as expected" && exit 1; fi
