@@ -40,7 +40,8 @@ jobs:
       - name: Print environment with masked secrets
         run: printenv
       - name: Notify Slack
-        uses: Ilshidur/action-slack@2.0.1 # the SLACK_WEBHOOK gets set automatically
+        # This action expects SLACK_WEBHOOK to be set, which is now done automatically
+        uses: Ilshidur/action-slack@2.0.1
         with:
           args: Sent from GitHub Actions with secrets from SecretHub 🔑
 ```
