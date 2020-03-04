@@ -1,0 +1,8 @@
+name: SecretHub - Export Environment Variables
+description: Make secrets from SecretHub available to your job as environment variables
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: hexagon
+  color: blue
