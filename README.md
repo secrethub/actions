@@ -11,7 +11,8 @@
   <i>GitHub Actions</i>
 </h1>
 
-[![Version]( https://img.shields.io/github/release/secrethub/actions.svg)](https://github.com/secrethub/actions/releases/latest)
+[![CI](https://github.com/secrethub/actions/workflows/.github/workflows/main.yml/badge.svg)](https://github.com/secrethub/actions/actions)
+[![Version](https://img.shields.io/github/release/secrethub/actions.svg)](https://github.com/secrethub/actions/releases/latest)
 [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg?logo=discord)](https://discord.gg/NWmxVeb)
 
 > [SecretHub](https://secrethub.io) is an end-to-end encrypted secret management service that helps developers keep database passwords, API keys, and other secrets out of source code.
