@@ -1,0 +1,12 @@
+name: SecretHub
+description: Load secrets into your GitHub workflows
+branding:
+  icon: lock
+  color: blue
+runs:
+  using: docker
+  image: docker://alpine
+  args:
+    - echo
+    - -e 
+    - "Choose one of the available SecretHub Actions:\n  * secrethub/actions/env-export"
