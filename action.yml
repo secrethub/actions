@@ -3,12 +3,10 @@ description: Load secrets into your GitHub workflows
 branding:
   icon: lock
   color: blue
-inputs:
-  args:
-    default: --help
-    description: Command and args to pass to the SecretHub CLI
 runs:
   using: docker
-  image: docker://secrethub/cli:0.36.0
+  image: docker://alpine
   args:
-    - ${{ inputs.args }} 
+    - echo
+    - -e 
+    - "Choose one of the available SecretHub Actions:\n  * secrethub/actions/env-export"
