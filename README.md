@@ -1,31 +1,30 @@
 <p align="center">
-  <a href="https://github.com/features/actions">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="120">
-  </a>
-  <img width="50px"/>
-  <a href="https://secrethub.io">
-    <img src="https://secrethub.io/img/secrethub-logo-shield.svg" alt="SecretHub" width="102">
+  <img src="https://secrethub.io/img/integrations/github-actions/github-banner.png?v1" alt="GitHub Actions + SecretHub" width="390">
   </a>
 </p>
-<h1 align="center">
-  <i>GitHub Actions</i>
-</h1>
+<br/>
+
+<p align="center">
+  <a href="https://secrethub.io/integrations/github-actions/"><img alt="Learn More" src="https://secrethub.io/img/buttons/github/learn-more.png?v1" height="28" /></a>
+</p>
+<br/>
+
+
+# Actions
 
 [![CI](https://github.com/secrethub/actions/workflows/.github/workflows/main.yml/badge.svg)](https://github.com/secrethub/actions/actions)
 [![Version](https://img.shields.io/github/release/secrethub/actions.svg)](https://github.com/secrethub/actions/releases/latest)
 [![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg?logo=discord)](https://discord.gg/NWmxVeb)
 
-> [SecretHub](https://secrethub.io) is an end-to-end encrypted secret management service that helps developers keep database passwords, API keys, and other secrets out of source code.
+No more copy-pasting sensitive values into a GUI. Securely load secrets into GitHub Actions and sync them automatically.
 
-## Actions
-
-### secrethub/actions/env-export
+## secrethub/actions/env-export
 
 The `env-export` action reads all referenced secrets from environment variables prefixed by `secrethub://` and secrets specified in the `secrethub.env` template file, and makes the secret values available as environment variables to the rest of the job.
 
 It leverages GitHub's output masking feature, so if secret values are (accidentally) logged, they get replaced with `*****`.
 
-#### Usage
+### Usage
 
 ```yml
 on: push
