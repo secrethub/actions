@@ -1,6 +1,5 @@
 <p align="center">
   <img src="https://secrethub.io/img/integrations/github-actions/github-banner.png?v1" alt="GitHub Actions + SecretHub" width="390">
-  </a>
 </p>
 <br/>
 
