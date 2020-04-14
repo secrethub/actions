@@ -17,6 +17,8 @@
 
 No more copy-pasting sensitive values into a GUI. Securely load secrets into GitHub Actions and sync them automatically.
 
+This Action is officially supported and actively maintained by SecretHub, but community contributions are very welcome. 
+
 ## secrethub/actions/env-export
 
 The `env-export` action reads all referenced secrets from environment variables prefixed by `secrethub://` and secrets specified in the `secrethub.env` template file, and makes the secret values available as environment variables to the rest of the job.
