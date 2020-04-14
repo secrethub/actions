@@ -11,9 +11,9 @@
 
 # Actions
 
-[![CI](https://github.com/secrethub/actions/workflows/.github/workflows/main.yml/badge.svg)](https://github.com/secrethub/actions/actions)
-[![Version](https://img.shields.io/github/release/secrethub/actions.svg)](https://github.com/secrethub/actions/releases/latest)
-[![Discord](https://img.shields.io/badge/chat-on%20discord-7289da.svg?logo=discord)](https://discord.gg/NWmxVeb)
+[![](https://github.com/secrethub/actions/workflows/.github/workflows/main.yml/badge.svg)](https://github.com/secrethub/actions/actions)
+[![](https://img.shields.io/github/release/secrethub/actions.svg)](https://github.com/secrethub/actions/releases/latest)
+[![](https://img.shields.io/badge/chat-on%20discord-7289da.svg?logo=discord)](https://discord.gg/NWmxVeb)
 
 No more copy-pasting sensitive values into a GUI. Securely load secrets into GitHub Actions and sync them automatically.
 
