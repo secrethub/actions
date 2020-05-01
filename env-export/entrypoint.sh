@@ -1,9 +1,7 @@
 #!/bin/sh
 set -e
 
-export SECRETHUB_APP_INFO_NAME=secrethub-action-env-export
-# Version is automatically bumped on release branches
-export SECRETHUB_APP_INFO_VERSION=0.1.0
+source /app-info.sh
 
 env_var_names=$(secrethub env ls)
 echo "The following environment variables will be populated with secrets from SecretHub:"
