@@ -1,0 +1,18 @@
+on:
+  push:
+    branches:
+      - release/v*
+
+jobs:
+  bump-version:
+    name: Bump app info version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Bump version
+        uses: florisvdg/action-version-bump@v0.1.0
+        with:
+          sed: 's/\(export SECRETHUB_APP_INFO_VERSION=\).*/\1$VERSION/g'
+          file: env-export/app-info.sh
+          author_email: bender.github@secrethub.io

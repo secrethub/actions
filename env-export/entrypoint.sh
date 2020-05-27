@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+source /app-info.sh
+
 env_var_names=$(secrethub env ls)
 echo "The following environment variables will be populated with secrets from SecretHub:"
 echo "$env_var_names"
