@@ -1,4 +1,4 @@
-FROM secrethub/cli:0.36.0
+FROM secrethub/cli:0.38.0
 
 RUN apk add sed
 
