@@ -46,3 +46,11 @@ jobs:
         with:
           args: Sent from GitHub Actions with secrets from SecretHub 🔑
 ```
+
+## Credential
+
+The example above passes the `SECRETHUB_CREDENTIAL` environment variable. This credential is used to authenticate to SecretHub and decrypt your secrets.
+
+You can obtain a credential by creating a [service account](https://secrethub.io/docs/reference/cli/service). Service accounts are completely separate accounts from your personal account, which means you can [manage their access](https://secrethub.io/docs/reference/cli/acl/) separately and you can identify them in the [audit log](https://secrethub.io/docs/reference/cli/audit/).
+
+After you've obtained a credential for SecretHub, you [store it in a GitHub secret](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets#creating-encrypted-secrets-for-a-repository), so that it can be fetched in your action as shown above.
