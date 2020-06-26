@@ -47,7 +47,7 @@ jobs:
           args: Sent from GitHub Actions with secrets from SecretHub 🔑
 ```
 
-#### Credential
+## Credential
 
 The example above passes the `SECRETHUB_CREDENTIAL` environment variable. This credential is used to authenticate to SecretHub and decrypt your secrets.
 
