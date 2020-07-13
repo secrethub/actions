@@ -15,9 +15,11 @@
 [![](https://img.shields.io/github/release/secrethub/actions.svg)](https://github.com/secrethub/actions/releases/latest)
 [![](https://img.shields.io/badge/chat-on%20discord-7289da.svg?logo=discord)](https://discord.gg/NWmxVeb)
 
-No more copy-pasting sensitive values into a GUI. Securely load secrets into GitHub Actions and sync them automatically.
+No more copy-pasting sensitive values into a GUI. Securely load secrets into GitHub Actions and sync them automatically using SecretHub.
 
 This Action is officially supported and actively maintained by SecretHub, but community contributions are very welcome. 
+
+> [SecretHub][secrethub] is a secrets management tool that works for every engineer. Securely provision passwords and keys throughout your entire stack with just a few lines of code.
 
 ## secrethub/actions/env-export
 
