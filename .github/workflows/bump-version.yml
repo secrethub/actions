@@ -8,8 +8,15 @@ jobs:
     name: Bump app info version
     runs-on: ubuntu-latest
     steps:
+      - name: Load secrets
+        uses: secrethub/actions/env-export@v0.1.0
+        env:
+          SECRETHUB_CREDENTIAL: ${{ secrets.SECRETHUB_CREDENTIAL }}
+          GITHUB_TOKEN: secrethub://secrethub/github-actions/github/token
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          token: ${{ env.GITHUB_TOKEN }}
       - name: Bump version
         uses: florisvdg/action-version-bump@v0.1.0
         with:
