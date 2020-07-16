@@ -10,5 +10,9 @@ jobs:
           SECRET: secrethub://secrethub/github-actions/tst/secret
       - name: Print environment with masked secrets
         run: printenv
+      - name: Echo secret
+        uses: florisvdg/echo-action@master
+        with:
+          message: ${{ env.SECRET }}
       - name: Test secret is set to correct value
         run: if [ $SECRET != "DDXLKkBhprQgW7w7OFsM8y" ]; then echo "secret is not set as expected" && exit 1; fi
