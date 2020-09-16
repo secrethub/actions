@@ -9,4 +9,4 @@ runs:
   args:
     - echo
     - -e 
-    - "Choose one of the available SecretHub Actions:\n  * secrethub/actions/env-export"
+    - "Choose one of the available SecretHub Actions:\n  * secrethub/actions/install\n  * secrethub/actions/env-export"

@@ -1,0 +1,9 @@
+name: SecretHub - Install CLI
+description: Install the SecretHub CLI on Linux, macOS, or Windows
+runs:
+  using: 'node12'
+  main: 'index.js'
+inputs:
+  version:
+    default: latest
+    description: CLI version to install
