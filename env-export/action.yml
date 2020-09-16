@@ -3,6 +3,3 @@ description: Make secrets from SecretHub available to your job as environment va
 runs:
   using: docker
   image: Dockerfile
-branding:
-  icon: lock
-  color: blue
