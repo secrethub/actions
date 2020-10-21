@@ -7,7 +7,7 @@ jobs:
       - uses: ./env-export
         env:
           SECRETHUB_CREDENTIAL: ${{ secrets.SECRETHUB_CREDENTIAL }}
-          SECRET: secrethub://secrethub/github-actions/tst/secret
+          SECRET: secrethub://scam-or-not/github-actions/tst/secret
       - name: Print environment with masked secrets
         run: printenv
       - name: Test secret is set to correct value
