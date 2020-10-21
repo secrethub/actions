@@ -8,7 +8,14 @@ jobs:
         env:
           SECRETHUB_CREDENTIAL: ${{ secrets.SECRETHUB_CREDENTIAL }}
           SECRET: secrethub://secrethub/github-actions/tst/secret
+          MULTILINE_SECRET: secrethub://secrethub/github-actions/tst/multiline_secret
       - name: Print environment with masked secrets
         run: printenv
       - name: Test secret is set to correct value
-        run: if [ $SECRET != "DDXLKkBhprQgW7w7OFsM8y" ]; then echo "secret is not set as expected" && exit 1; fi
+        run: if [ "$SECRET" != "DDXLKkBhprQgW7w7OFsM8y" ]; then echo "secret is not set as expected" && exit 1; fi
+      - name: Test multiline secret is set to correct value
+        env:
+          MULTILINE_SECRET_EXPECTED: |-
+            4dAXbmYWiLkyYpExLnhGRD9wA7
+            rsrNbNYprQZHz8Vtgu4fJezGDB
+        run: if [ "$MULTILINE_SECRET" != "$MULTILINE_SECRET_EXPECTED" ]; then echo "secret is not set as expected" && exit 1; fi
