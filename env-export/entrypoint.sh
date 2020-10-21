@@ -20,5 +20,5 @@ for var_name in $env_var_names; do
 
 	# Escape percent signs and newlines when setting the environment variable
 	escaped_env_var_value=$(echo -n "$secret_value" | sed -z -e 's/%/%25/g' -e 's/\n/%0A/g')
-	echo "::set-env name=$var_name::$escaped_env_var_value"
+	echo "$var_name=$escaped_env_var_value" >> $GITHUB_ENV
 done
