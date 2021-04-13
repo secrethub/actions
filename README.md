@@ -1,3 +1,7 @@
+**SecretHub is joining 1Password!** Find out more on the [SecretHub blog](https://secrethub.io/blog/secrethub-joins-1password/).
+
+---
+
 <p align="center">
   <img src="https://secrethub.io/img/integrations/github-actions/github-banner.png?v2" alt="GitHub Actions + SecretHub" width="390">
 </p>
